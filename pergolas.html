@@ -1,0 +1,224 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecodeck - Pérgolas</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&;700display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/funciones.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href=".//stylesheets/styles.css">
+</head>
+
+<body>
+  <nav class="navbar" data-target=".navbar-collapse" data-toggle="collapse">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="imagenes/logo/ecodeck-logo.png" alt="logo Ecodeck"></a>
+      <button class="hamburger hamburger--emphatic" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">            
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+          </li>
+          <li>
+            <a href="quienes-somos.html">¿Quienes somos?</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos <i class="bi bi-caret-down-fill"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a href="catalogo.html">Ver catálogo</a></li>
+              <li><a href="comparativa.html">Comparativa</a></li>
+              <li><a href="deck-sintetico.html">Deck sintético</a></li>
+              <li><a href="deck-madera.html">Deck de madera</a></li>
+              <li><a href="revestimientos.html">Revestimientos</a></li>
+              <li><a class="active" href="pergolas.html">Pérgolas</a></li>
+              <li><a href="pisos.html">Pisos SPC</a></li>
+              <li><a href="perfiles.html">Perfiles WPC</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a href="obras.html">Obras</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div><!-- cierra collapse -->
+    </div><!-- cierra container -->
+  </nav>
+
+  <div class="encabezado-seccion pergolas">
+    <div class="container">
+      <div class="row">
+        <h3>Pérgolas</h3>
+      </div><!-- cierra row-->
+    </div><!-- cierra container-->
+  </div><!-- cierra encabezado-seccion-->   
+
+  <div class="bg-dark">
+    <div class="container pt-5 text-center">
+      <div class="row">
+        <p><span>Estilos variados.</span> Lugares únicos.</p>
+      </div><!-- cierra row-->
+    </div><!-- cierra container-->
+  </div><!-- cierra bg-dark-->
+
+  <div class="fondo-efecto-circular">
+    <div class="efecto"></div><!-- cierra row-->
+  </div><!-- cierra fondo-efecto-circular-->
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="carousel-productos">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">  
+          <div class="carousel-inner">  
+            <div class="carousel-item active">
+              <img class="carousel-img" src="imagenes/pergolas/pergola-slider-1.jpg" alt="Características de pérgolas">        
+            </div><!-- cierra carousel-item--> 
+            <div class="carousel-item">
+              <img class="carousel-img" src="imagenes/pergolas/pergola-slider-2.jpg" alt="Características de pérgolas">        
+            </div><!-- cierra carousel-item-->        
+            <div class="carousel-item">
+              <img class="carousel-img" src="imagenes/pergolas/pergola-slider-3.jpg" alt="Características de pérgolas">        
+            </div><!-- cierra carousel-item-->   
+            <div class="carousel-item">
+              <img class="carousel-img" src="imagenes/pergolas/pergola-slider-4.jpg" alt="Características de pérgolas">        
+            </div><!-- cierra carousel-item--> 
+            <div class="carousel-item">
+              <img class="carousel-img" src="imagenes/pergolas/pergola-slider-5.jpg" alt="Características de pérgolas">        
+            </div><!-- cierra carousel-item-->   
+
+            <div class="carousel-indicators">
+              <div class="linea-vertical-top"></div><!-- cierra linea-vertical-top-->
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <div class="linea-vertical-bottom"></div><!-- cierra linea-vertical-bottom-->
+            </div><!-- cierra carousel-indicators-->         
+          </div><!-- cierra carousel-inner-->
+        </div><!-- cierra carousel-->
+      </div><!-- cierra carousel-productos -->
+      </div><!-- cierra col -->
+      <div class="col-lg-6 col-md-12">        
+        <div class="contenido-texto">
+          <div class="bg-white">
+            <h3>Características</h3>
+            <div class="separador"></div><!-- cierra separador -->
+            <hr>
+            <p><i class="bi bi-check"></i>Las pérgolas de madera <span>se utilizan en espacios exteriores,</span> para dar un marco de calidez y sensación de confortabilidad a un sector determinado.</p>
+            <p><i class="bi bi-check"></i><span>Se pueden hallar una infinidad de diseños,</span> con distintos tipos de madera. A partir de esta posibilidad, se proyectan para filtrar la luz, sin generar un espacio totalmente cerrado y atenuando tanto el frío como el calor. Esto permite que tanto las corrientes de aire como el sol pasen en la medida deseada, generando espacios semi-cubiertos muy agradables.</p>
+            <p><i class="bi bi-check"></i>Generalmente <span>se construyen con columnas, vigas perimetrales y de repartición y listones</span> que presentan una ligera separación, lo cual permite el paso de los rayos de sol.</p>
+            <p><i class="bi bi-check"></i>La variedad de diseños <span>permite desarrollar un producto a la medida de los gustos y necesidades</span> de cada uno, haciéndolo más o menos permeable y con o sin chapa traslúcida, lo que permite evitar que la lluvia pase entre sus listones. </p>
+          </div><!-- cierra bg-white -->
+        </div><!-- cierra contenido-texto -->
+      </div><!-- cierra col --> 
+    </div><!-- cierra row -->
+  </div><!-- cierra container -->    
+
+  <div class="caracteristicas">
+    <div class="container py-5 text-center">
+      <div class="row">          
+        <div class="col-md-4 mx-auto my-2">
+          <div class="iconos-texto">
+            <i class="bi bi-thermometer"></i><p>Atenúan tanto el frío como el calor</p>
+          </div><!-- cierra iconos-texto -->
+        </div><!-- cierra col-->
+        <div class="col-md-4 mx-auto my-2">
+          <div class="iconos-texto">
+            <i class="bi bi-pencil-square"></i><p>Variedad de diseños</p>
+          </div><!-- cierra iconos-texto -->
+        </div><!-- cierra col-->
+        <div class="col-md-4 mx-auto my-2">
+          <div class="iconos-texto">
+            <i class="bi bi-layers"></i><p>Distintos tipos de madera</p>
+          </div><!-- cierra iconos-texto -->
+        </div><!-- cierra col-->
+      </div><!-- cierra row-->
+    </div><!-- cierra container-->
+  </div><!-- cierra caracteristicas-->
+
+  <div class="bg-dark">
+    <div class="container py-5 text-center">
+      <div class="row">
+        <div class="cotizacion">
+          <a class="btn btn-default btn animate__animated animate__slideInUp" href="contacto.html" role="button">Solicitar cotización<i class="bi bi-arrow-right-circle-fill"></i></a>
+        </div><!-- cierra cotizacion-->
+      </div><!-- cierra row-->
+    </div><!-- cierra container-->
+  </div><!-- cierra bg-dark -->
+
+  <footer>  
+    <div class="bg-dark">
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-12">
+              <div class="logo-footer">
+                <img src="imagenes/logo/ecodeck-logo.png" alt="logo Ecodeck">
+                <p>Somos una empresa dedicada a la venta, distribución y colocación de decks de alta calidad para toda la República Argentina y países limítrofes.</p>
+                <div class="redes-sociales">
+                  <ul>
+                    <li><a href="https://www.facebook.com/ecodeckarg" target="_blank"><i class="bi bi-facebook" title="Encontranos en Facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/ecodeckarg" target="_blank"><i class="bi bi-instagram" title="Encontranos en Instagram"></i></a></li>
+                  </ul>
+                </div><!-- cierra redes-sociales-->
+              </div><!-- cierra logo-footer-->
+            </div><!-- cierra col-->
+            <div class="col-lg-3 col-md-12"> 
+                <h4>PRODUCTOS</h4>
+                <ul>       
+                <li><a href="deck-sintetico.html"><i class="bi bi-caret-right-fill"></i> Deck sintético</a></li>
+                <li><a href="deck-madera.html"><i class="bi bi-caret-right-fill"></i> Deck de madera</a></li>
+                <li><a href="revestimientos.html"><i class="bi bi-caret-right-fill"></i> Revestimientos</a></li>
+                <li><a class="active" href="pergolas.html"><i class="bi bi-caret-right-fill"></i> Pérgolas</a></li>
+                <li><a href="pisos.html"><i class="bi bi-caret-right-fill"></i> Pisos SPC</a></li>
+                <li><a href="perfiles.html"><i class="bi bi-caret-right-fill"></i> Perfiles WPC</a></li>                
+              </ul>
+            </div><!-- cierra col-->
+            <div class="col-lg-4 col-md-12">  
+                <h4>CONTACTO</h4>
+              <ul class="contacto-footer">
+                <li><a href=""><i class="bi bi-geo-alt"></i><span>Dirección Oficinas administrativas:</span> </a></li>                
+                  <li class="footer-direccion"><a href="">Av. Olazabal 1515, Belgrano, CABA</a></li>
+                  <li><a href=""><i class="bi bi-telephone"></i> <span>Ventas:</span> (011) 5353-4870</a></li>
+                  <li><a href=""><i class="bi bi-phone-vibrate"></i> <span>Celular:</span> (011) 15-6759-1079</a></li>
+                  <li><a href=""><i class="bi bi-phone-vibrate"></i> <span>Celular:</span> (011) 15-6733-1111</a></li>
+                  <li><a href=""><i class="bi bi-envelope"></i> <span>E-mail:</span> info@ecodeck.com.ar</a></li>        
+                </ul>
+              </div><!-- cierra col-->
+            </div><!-- cierra row-->
+          </div> <!-- cierra container-->  
+        </div> <!-- cierra py-3-->  
+      </div><!-- cierra bg-dark --> 
+    </footer>
+
+  <div class="footer-bottom">
+    <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ecodeck. Todos los derechos reservados.</p>
+  </div><!-- cierra footer-bottom -->
+
+  <a href="https://api.whatsapp.com/send?phone=+" class="btn-wsp" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a> 
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecodeck - Deck de madera</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&;700display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bup.js"></script>  
+  <script src="js/funciones.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href=".//stylesheets/styles.css">
+</head>
+
+<body>
+  <nav class="navbar" data-target=".navbar-collapse" data-toggle="collapse">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="imagenes/logo/ecodeck-logo.png" alt="logo Ecodeck"></a>
+      <button class="hamburger hamburger--emphatic" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">            
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+          </li>
+          <li>
+            <a href="quienes-somos.html">¿Quienes somos?</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos <i class="bi bi-caret-down-fill"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a href="catalogo.html">Ver catálogo</a></li>
+              <li><a href="comparativa.html">Comparativa</a></li>
+              <li><a href="deck-sintetico.html">Deck sintético</a></li>
+              <li><a class="active" href="deck-madera.html">Deck de madera</a></li>
+              <li><a href="revestimientos.html">Revestimientos</a></li>
+              <li><a href="pergolas.html">Pérgolas</a></li>
+              <li><a href="pisos.html">Pisos SPC</a></li>
+              <li><a href="perfiles.html">Perfiles WPC</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a href="obras.html">Obras</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div><!-- cierra collapse -->
+    </div><!-- cierra container -->
+  </nav>
+
+  <div class="encabezado-seccion deckmadera">
+    <div class="container">
+      <div class="row">
+        <h3><span>Deck</span> de madera</h3>
+      </div><!-- cierra row-->
+    </div><!-- cierra container-->
+  </div><!-- cierra encabezado-seccion-->   
+
+  <div class="bg-dark">
+    <div class="container pt-5 text-center">
+      <div class="row">
+        <p>Nuestra trayectoria en el rubro nos permitió realizar <span>un proceso sustentable,</span> tanto para preservar los bosques talados, así como también para garantizar la durabilidad de la madera.</p>
+      </div><!-- cierra row-->
+    </div><!-- cierra container-->
+  </div><!-- cierra bg-dark-->
+
+  <div class="fondo-efecto-circular">
+    <div class="efecto"></div><!-- cierra row-->
+  </div><!-- cierra fondo-efecto-circular-->
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="carousel-productos">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">  
+          <div class="carousel-inner">    
+            <div class="carousel-item active">
+              <img class="carousel-img" src="imagenes/deck-madera/madera-slider-1.jpg" alt="Características de Deck madera">        
+            </div><!-- cierra carousel-item--> 
+            <div class="carousel-item">
+              <img class="carousel-img" src="imagenes/deck-madera/madera-slider-2.jpg" alt="Características de Deck madera">        
+            </div><!-- cierra carousel-item-->        
+            <div class="carousel-item">
+              <img class="carousel-img" src="imagenes/deck-madera/madera-slider-3.jpg" alt="Características de Deck madera">        
+            </div><!-- cierra carousel-item-->    
+            <div class="carousel-item">
+              <img class="carousel-img" src="imagenes/deck-madera/madera-slider-4.jpg" alt="Características de Deck madera">        
+            </div><!-- cierra carousel-item-->             
+            <div class="carousel-indicators">
+              <div class="linea-vertical-top"></div><!-- cierra linea-vertical-top-->
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <div class="linea-vertical-bottom"></div><!-- cierra linea-vertical-bottom-->
+            </div><!-- cierra carousel-indicators-->         
+          </div><!-- cierra carousel-inner-->
+        </div><!-- cierra carousel-->
+      </div><!-- cierra carousel-productos -->
+      </div><!-- cierra col -->
+      <div class="col-lg-6 col-md-12">
+        <div class="contenido-texto">
+          <div class="bg-white">
+            <h3>Características</h3>
+            <div class="separador"></div><!-- cierra separador -->
+            <hr>
+            <p><i class="bi bi-check"></i>Los decks de madera <span>son una gran solución para la ampliación de espacios, categorización de jardines y generación de lugares de estar a la intemperie.</span></p>
+            <p><i class="bi bi-check"></i>La madera es un <span>producto muy cálido, noble y versátil</span>, que otorga diseño a diversos espacios, permitiendo, así, diagramar un lugar ideal para reuniones o descanso en el exterior.</p>
+            <p><i class="bi bi-check"></i>Este tipo de decks <span>se puede colocar sobre pisos ya existentes, carpetas cementicias o directamente sobre la tierra.</span> Con una estructura de madera, se distribuyen las tablas de modo tal que se genere un deck a la medida y con la forma que desee cada uno.</p> 
+            <p><i class="bi bi-check"></i>Cabe aclarar que para extender su durabilidad y mejorar su rendimiento, todos los decks de madera necesitan un tratamiento constante. Se recomienda que el mismo se lleve a cabo, al menos, una vez al año. Para este mantenimiento <span>se les puede aplicar algún protector</span> (como puede ser el <span>Cetol</span>), luego de ser lijado. Se pueden hallar distintos tipos de maderas, con diferentes tonos y rendimientos. Las características de las mismas permiten variaciones, según lo que cada espacio requiera.</p>          
+          </div><!-- cierra bg-white -->
+        </div><!-- cierra contenido-texto -->
+      </div><!-- cierra col --> 
+    </div><!-- cierra row -->
+  </div><!-- cierra container -->   
+
+  <div class="caracteristicas">
+    <div class="container py-5 text-center">
+      <div class="row">          
+        <div class="col-md-4 mx-auto my-2">
+          <div class="iconos-texto">
+            <i class="bi bi-tools"></i><p>Necesitan tratamiento constante</p>
+          </div><!-- cierra iconos-texto -->
+        </div><!-- cierra col-->
+        <div class="col-md-4 mx-auto my-2">
+          <div class="iconos-texto">
+            <i class="bi bi-palette"></i><p>Diferentes tonos</p>
+          </div><!-- cierra iconos-texto -->
+        </div><!-- cierra col-->
+        <div class="col-md-4 mx-auto my-2">
+          <div class="iconos-texto">
+            <i class="bi bi-hammer"></i><p>Fácil colocación</p>
+          </div><!-- cierra iconos-texto -->
+        </div><!-- cierra col-->
+      </div><!-- cierra row-->
+    </div><!-- cierra container-->
+  </div><!-- cierra caracteristicas-->
+
+  <div class="imagen-fondo py-5">
+    <div class="container">
+      <div class="row">
+        <h3><span>En</span> ECODECK</h3>
+        <p>nos encargamos de seleccionar<span> las mejores maderas,</span> para que, independientemente de cuál se elija, el producto final mantenga la excelencia, calidad y estilo que buscamos.</p>           
+      </div><!-- cierra row-->            
+    </div><!-- cierra container-->
+  </div><!-- cierra imagen-fondo-->
+
+  <div class="bg-dark">
+    <div class="container py-5 text-center">
+      <div class="row">
+        <div class="cotizacion">
+          <a class="btn btn-default btn animate__animated animate__slideInUp" href="contacto.html" role="button">Solicitar cotización<i class="bi bi-arrow-right-circle-fill"></i></a>
+        </div><!-- cierra cotizacion-->
+      </div><!-- cierra row-->
+    </div><!-- cierra container-->
+  </div><!-- cierra bg-dark -->
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">                
+        <div class="bg-white"> 
+          <img src="imagenes/deck-madera/pino-impregnado.jpg" class="laftImg" alt="Pino impregnado">         
+        </div><!-- cierra bg-white-->
+      </div><!-- cierra col -->
+      <div class="col-lg-6 col-md-12">
+        <div class="contenido-texto">
+          <div class="bg-white">
+            <h3>Pino impregnado</h3>
+            <div class="separador"></div><!-- cierra separador -->
+            <hr>
+            <h4>Una opción económica y buena</h4>
+            <p><span>Proviene de maderas renovables,</span> las cuales pasan por un sistema de impregnación, con presión y vacío en autoclave. El componente que reciben es <span>CCA: cromo, arsénico y nitrato de cobre.</span> Estos tres productos, combinados, <span>hacen que la madera no se pudra y obtenga una mayor duración en el tiempo.</span> Si bien este proceso garantiza que la madera no se pudra, no asegura que no se fisure ni se rompa.</p> 
+            <div class="datos-destacados">
+              <h2>cca</h2>
+              <h4>cromo + arsénico <br>+ nitrato de cobre</h4>
+            </div><!-- cierra datos-destacados -->         
+          </div><!-- cierra bg-white -->
+        </div><!-- cierra contenido-texto -->
+      </div><!-- cierra col --> 
+    </div><!-- cierra row -->
+  </div><!-- cierra container -->   
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="contenido-texto">
+          <div class="bg-white">
+            <h3>Guayubira</h3>
+            <div class="separador"></div><!-- cierra separador -->
+            <hr>
+            <h4>Un veteado que te da estilo</h4>
+            <p>Es una <span>madera dura, no renovable,</span> que viene en dos colores en la misma madera, con un veteado llamativo entre un marrón muy oscuro y uno muy claro. Estos decks <span>se destacan por su durabilidad.</span> Como aspecto negativo, se debe mencionar que al ser una madera de monte, que proviene de un árbol poco cilíndrico, no tiene mucho aprovechamiento. Es decir, su mayor desventaja es que <span>las tablas no superan los 3 metros,</span> haciendo que la optimización de corte sea complicada.</p> 
+            <div class="datos-destacados">
+              <h2>3</h2>
+              <h4>mts <br> de altura</h4>
+            </div><!-- cierra datos-destacados -->
+            <div class="datos-destacados">
+              <h2>2</h2>
+              <h4>colores <br> en la madera</h4>
+            </div><!-- cierra datos-destacados -->
+          </div><!-- cierra bg-white -->
+        </div><!-- cierra contenido-texto -->
+      </div><!-- cierra col -->       
+      <div class="col-lg-6 col-md-12">
+        <div class="bg-white"> 
+          <img src="imagenes/deck-madera/guayubira.jpg" class="laftImg1" alt="Guayubira">         
+        </div><!-- cierra bg-white-->
+      </div><!-- cierra col -->
+    </div><!-- cierra row -->
+  </div><!-- cierra container -->  
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="bg-white"> 
+          <img src="imagenes/deck-madera/eucalipto.jpg" class="laftImg2" alt="Eucalipto">          
+        </div><!-- cierra bg-white-->
+      </div><!-- cierra col -->
+      <div class="col-lg-6 col-md-12">
+        <div class="contenido-texto">
+          <div class="bg-white">
+            <h3>Eucalipto</h3>
+            <div class="separador"></div><!-- cierra separador -->
+            <hr>
+            <h4>Una posibilidad económica y resistente</h4>
+            <p>Es una madera <span>dura y muy fibrosa,</span> lo que hace que obtenga <span>mayor resistencia a la intemperie,</span> siempre y cuando no tenga contacto con la tierra. Por sus características, <span>debe estar suspendida por una estructura,</span> que le impida la unión con el suelo.</p> 
+          </div><!-- cierra bg-white -->
+        </div><!-- cierra contenido-texto -->
+      </div><!-- cierra col --> 
+    </div><!-- cierra row -->
+  </div><!-- cierra container -->    
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="contenido-texto">
+          <div class="bg-white">
+            <h3>Lapacho</h3>
+            <div class="separador"></div><!-- cierra separador -->
+            <hr>
+            <h4>Menos mantenimiento y más resistencia</h4>
+            <p>Proviene de maderas renovables, las cuales pasan por un sistema de impregnación, con presión y vacío en autoclave. El componente que reciben es <span>CCA: cromo, arsénico y nitrato de cobre.</span> Estos tres productos, combinados, <span>hacen que la madera no se pudra y obtenga una mayor duración</span> en el tiempo. Si bien este proceso garantiza que la madera no se pudra, no asegura que no se fisure ni se rompa</p> 
+            <div class="datos-destacados">
+              <h2>cca</h2>
+              <h4>cromo + arsénico <br>+ nitrato de cobre</h4>
+            </div><!-- cierra datos-destacados -->
+          </div><!-- cierra contenido-texto -->
+        </div><!-- cierra bg-white -->
+      </div><!-- cierra col -->       
+      <div class="col-lg-6 col-md-12">
+        <div class="bg-white"> 
+          <img src="imagenes/deck-madera/lapacho.jpg" class="laftImg3" alt="Lapacho">       
+        </div><!-- cierra bg-white-->
+      </div><!-- cierra col -->
+    </div><!-- cierra row -->
+  </div><!-- cierra container -->  
+
+  <footer>  
+    <div class="bg-dark">
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-12">
+              <div class="logo-footer">
+                <img src="imagenes/logo/ecodeck-logo.png" alt="logo Ecodeck">
+                <p>Somos una empresa dedicada a la venta, distribución y colocación de decks de alta calidad para toda la República Argentina y países limítrofes.</p>
+                <div class="redes-sociales">
+                  <ul>
+                    <li><a href="https://www.facebook.com/ecodeckarg" target="_blank"><i class="bi bi-facebook" title="Encontranos en Facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/ecodeckarg" target="_blank"><i class="bi bi-instagram" title="Encontranos en Instagram"></i></a></li>
+                  </ul>
+                </div><!-- cierra redes-sociales-->
+              </div><!-- cierra logo-footer-->
+            </div><!-- cierra col-->
+            <div class="col-lg-3 col-md-12"> 
+                <h4>PRODUCTOS</h4>
+                <ul>       
+                <li><a href="deck-sintetico.html"><i class="bi bi-caret-right-fill"></i> Deck sintético</a></li>
+                <li><a class="active" href="deck-madera.html"><i class="bi bi-caret-right-fill"></i> Deck de madera</a></li>
+                <li><a href="revestimientos.html"><i class="bi bi-caret-right-fill"></i> Revestimientos</a></li>
+                <li><a href="pergolas.html"><i class="bi bi-caret-right-fill"></i> Pérgolas</a></li>
+                <li><a href="pisos.html"><i class="bi bi-caret-right-fill"></i> Pisos SPC</a></li>
+                <li><a href="perfiles.html"><i class="bi bi-caret-right-fill"></i> Perfiles WPC</a></li>                
+              </ul>
+            </div><!-- cierra col-->
+            <div class="col-lg-4 col-md-12">  
+                <h4>CONTACTO</h4>
+              <ul class="contacto-footer">
+                <li><a href=""><i class="bi bi-geo-alt"></i><span>Dirección Oficinas administrativas:</span> </a></li>                
+                  <li class="footer-direccion"><a href="">Av. Olazabal 1515, Belgrano, CABA</a></li>
+                  <li><a href=""><i class="bi bi-telephone"></i> <span>Ventas:</span> (011) 5353-4870</a></li>
+                  <li><a href=""><i class="bi bi-phone-vibrate"></i> <span>Celular:</span> (011) 15-6759-1079</a></li>
+                  <li><a href=""><i class="bi bi-phone-vibrate"></i> <span>Celular:</span> (011) 15-6733-1111</a></li>
+                  <li><a href=""><i class="bi bi-envelope"></i> <span>E-mail:</span> info@ecodeck.com.ar</a></li>        
+                </ul>
+              </div><!-- cierra col-->
+            </div><!-- cierra row-->
+          </div> <!-- cierra container-->  
+        </div> <!-- cierra py-3-->  
+      </div><!-- cierra bg-dark --> 
+    </footer>
+
+  <div class="footer-bottom">
+    <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ecodeck. Todos los derechos reservados.</p>
+  </div><!-- cierra footer-bottom -->
+
+  <a href="https://api.whatsapp.com/send?phone=+" class="btn-wsp" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a> 
+
+</body>
+</html>
