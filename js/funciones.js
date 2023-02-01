@@ -351,7 +351,7 @@ $(document).ready(function () {
 }) 
 
 sup=`
-<nav class="navbar" data-target=".navbar-collapse" data-toggle="collapse">
+<nav class="navbar navbar-default" data-target=".navbar-collapse" data-toggle="collapse">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="imagenes/logo/ecodeck-logo.png" alt="logo Ecodeck"></a>
       <button class="hamburger hamburger--emphatic" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">            
@@ -362,35 +362,102 @@ sup=`
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav navbar-nav">
           <li>
-            <a class="active" href="index.html"><i class="bi bi-house-door-fill"></i></a>
+            <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i></a>
           </li>
           <li>
-            <a class="active" href="quienes-somos.html">¿Quienes somos?</a>
+            <a class="nav-link" href="quienes-somos.html">¿Quienes somos?</a>
           </li>
           <li class="dropdown">
-            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="." id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Productos <i class="bi bi-caret-down-fill"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a href="catalogo.html">Ver catálogo</a></li>
-              <li><a href="comparativa.html">Comparativa</a></li>
-              <li><a href="deck-sintetico.html">Deck sintético</a></li>
-              <li><a href="deck-madera.html">Deck de madera</a></li>
-              <li><a href="revestimientos.html">Revestimientos</a></li>
-              <li><a href="pergolas.html">Pérgolas</a></li>
-              <li><a href="pisos.html">Pisos SPC</a></li>
-              <li><a href="perfiles.html">Perfiles WPC</a></li>
+              <li><a class="nav-link" href="catalogo.html">Ver catálogo</a></li>
+              <li><a class="nav-link" href="comparativa.html">Comparativa</a></li>
+              <li><a class="nav-link" href="deck-sintetico.html">Deck sintético</a></li>
+              <li><a class="nav-link" href="deck-madera.html">Deck de madera</a></li>
+              <li><a class="nav-link" href="wall-panel.html">Wall Panel</a></li>
+              <li><a class="nav-link" href="pergolas.html">Pérgolas</a></li>
+              <li><a class="nav-link" href="pisos.html">Pisos SPC</a></li>
+              <li><a class="nav-link" href="perfiles.html">Perfiles WPC</a></li>
+              <li><a class="nav-link" href="cielorrasopvc.html">Revestimientos / Cielorraso PVC</a></li>
             </ul>
           </li> 
           <li>
-            <a href="obras.html">Obras</a>
+            <a class="nav-link" href="obras.html">Obras</a>
           </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
-      </div><!-- cierra collapse -->
-    </div><!-- cierra container -->
+      </div>
+    </div>
   </nav>
 `
 document.write(sup)
+
+
+sup=`
+  <footer>  
+    <div class="bg-dark">
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-12">
+              <div class="logo-footer">
+                <img src="imagenes/logo/ecodeck-logo.png" alt="logo Ecodeck">
+                <p>Somos una empresa dedicada a la venta, distribución y colocación de decks de alta calidad para toda la República Argentina y países limítrofes.</p>
+                <div class="redes-sociales">
+                  <ul>
+                    <li><a href="https://www.facebook.com/ecodeckarg" target="_blank"><i class="bi bi-facebook" title="Encontranos en Facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/ecodeckarg" target="_blank"><i class="bi bi-instagram" title="Encontranos en Instagram"></i></a></li>
+                  </ul>
+                </div><!-- cierra redes-sociales-->
+              </div><!-- cierra logo-footer-->
+            </div><!-- cierra col-->
+            <div class="col-lg-3 col-md-12"> 
+                <h4>PRODUCTOS</h4>
+                <ul>       
+                <li><a class="nav-link" href="deck-sintetico.html"><i class="bi bi-caret-right-fill"></i> Deck sintético</a></li>
+                <li><a class="nav-link" href="deck-madera.html"><i class="bi bi-caret-right-fill"></i> Deck de madera</a></li>
+                <li><a class="nav-link" href="wall-panel.html"><i class="bi bi-caret-right-fill"></i> Wall Panel</a></li>
+                <li><a class="nav-link" href="pergolas.html"><i class="bi bi-caret-right-fill"></i> Pérgolas</a></li>
+                <li><a class="nav-link" href="pisos.html"><i class="bi bi-caret-right-fill"></i> Pisos SPC</a></li>
+                <li><a class="nav-link" href="perfiles.html"><i class="bi bi-caret-right-fill"></i> Perfiles WPC</a></li>
+                <li><a class="nav-link" href="cielorrasopvc.html"><i class="bi bi-caret-right-fill"></i> Revestimientos / Cielorraso PVC</a></li>              
+                
+              </ul>
+            </div><!-- cierra col-->
+            <div class="col-lg-4 col-md-12">  
+                <h4>CONTACTO</h4>
+              <ul class="contacto-footer">
+                <li><a href=""><i class="bi bi-geo-alt"></i><span>Dirección Oficinas administrativas:</span> </a></li>                
+                  <li class="footer-direccion"><a href="">Av. Olazabal 1515, Belgrano, CABA</a></li>
+                  <li><a href=""><i class="bi bi-telephone"></i> <span>Ventas:</span> (011) 5353-4870</a></li>
+                  <li><a href=""><i class="bi bi-phone-vibrate"></i> <span>Celular:</span> (011) 15-6759-1079</a></li>
+                  <li><a href=""><i class="bi bi-phone-vibrate"></i> <span>Celular:</span> (011) 15-6733-1111</a></li>
+                  <li><a href=""><i class="bi bi-envelope"></i> <span>E-mail:</span> info@ecodeck.com.ar</a></li>        
+                </ul>
+              </div><!-- cierra col-->
+            </div><!-- cierra row-->
+          </div> <!-- cierra container-->  
+        </div> <!-- cierra py-3-->  
+      </div><!-- cierra bg-dark -->       
+    </footer>
+`
+document.write(sup)
+
+sup=`
+  <div class="footer-bottom">
+      <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ecodeck. Todos los derechos reservados.</p>
+    </div><!-- cierra footer-bottom -->
+  `
+document.write(sup)
+
+
+document.querySelectorAll(".nav-link").forEach((link) => {
+  if (link.href === window.location.href) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+  }  
+});

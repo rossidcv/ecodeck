@@ -4,6 +4,13 @@ html,
 body{
   margin: 0;
   padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 ul, li, a, button{
   text-decoration: none;
@@ -17,6 +24,7 @@ a:hover {
 /*Navbar*/
 .navbar {  
   position: fixed;
+  top:0;
   width: 100%;
   padding: 0;
   z-index: 150;
@@ -42,6 +50,7 @@ a:hover {
 .navbar-nav {
   flex-direction: inherit;
   justify-content: flex-end;
+  border-bottom:1px solid transparent;
 }
 .navbar-nav {
   li {    
@@ -55,20 +64,15 @@ a:hover {
       padding: 25px 10px;
       transition: 0.4s;
       i {
-        font-size: 25px;        
+        font-size: 24px;        
         align-items: center;
         padding-left:5px;
         display:inline-flex;
       } 
       &:hover {
         color:$color-primario;
-      }     
-    }
-    a.active {
-      background-color: transparent;
-      color: $color-primario;
-      border-bottom: 1px solid $color-primario;
-    }
+      }  
+    }            
     .dropdown-menu {
       padding: 0 !important;
       top: 76px;
@@ -117,8 +121,13 @@ a:hover {
   }
   .dropdown-menu {
     position: absolute;
-  } 
+  }   
 }
+.navbar-nav .nav-link.active, 
+.navbar-nav .show>.nav-link {
+  color: $color-primario !important;
+  border-bottom:1px solid $color-primario;
+} 
 .dropdown {
   i {
     font-size: 15px !important;
@@ -160,7 +169,10 @@ a:hover {
     }
   }
 }
-
+main {
+  min-height: calc(100% - 81px);
+    position: relative;
+}
 /*Botón menú*/
 .hamburger {
   padding: 25px 15px 20px 15px;
@@ -170,6 +182,7 @@ a:hover {
   overflow: visible;
   outline: none;
   background-color:transparent;
+  border-color:transparent;
 }
 
 .hamburger.is-active {
@@ -651,6 +664,9 @@ a:hover {
 }
 
 /*Medios de pago*/
+.lista-medios-de-pago {
+  height:auto;
+}
 .medios-pago {
   height: 70px;
   filter: grayscale(1);
@@ -771,7 +787,7 @@ a:hover {
   background-image: url(../imagenes/encabezado-seccion/obras.jpg);
 } 
 .cielorraso {  
-  background-image: url(../imagenes/encabezado-seccion/cielorrasopvc2.png);  
+  background-image: url(../imagenes/encabezado-seccion/cielorrasopvc.png);  
   background-position:center top !important;
 }
 
@@ -1921,6 +1937,8 @@ td.madera {
 /*FOOTER*/
 footer {
   border-top: 1px solid $color-secundario;
+  width:100%;
+  bottom: 0;
   h4 {
     font-family: $subtitulos-font;
     font-size: 22px;
@@ -1950,14 +1968,14 @@ footer {
       a {
         font-family: $parrafo-font;
         font-size: $parrafo-size;
-        color: #a5a5a5;
+        color: #a5a5a5 !important;
         text-align: left;
         font-weight: 300;
         display: block;
         line-height: 25px;
         border-bottom: 1px dotted #565454;
         &:hover {
-          color: $color-primario;
+          color: $color-primario !important;
           font-weight: 300;
           transition-duration: .3s;
           border-bottom: 1px dotted $color-primario;
@@ -1977,8 +1995,8 @@ footer {
           padding-right: 5px;
         }
       }
-      a.active {
-        color: $color-primario;
+      .nav-link a.active {
+        color: $color-primario !important;
       }
     }
   }
@@ -1992,7 +2010,14 @@ footer {
       padding-left:22px;
     }
   }
+  .nav-link.active, 
+  .show > .nav-link,
+  .nav-link.active, 
+  .show > .nav-link {
+    color:$color-primario !important;
+  }
 }
+
 .redes-sociales {
   ul {
     display: inline-flex;
@@ -2035,7 +2060,6 @@ footer {
     padding: 5px 0;
   }
 }
-
 
 /* ========================= Media Queries ========================= */
 
@@ -2192,7 +2216,11 @@ footer {
     .dropdown-menu {
       width: 100%;
     }    
-  }   
+  }  
+  .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link,
+  .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color:#fff !important;
+  } 
   .scrolled .navbar-nav li a i.active,
   .navbar-nav li a.active {
     background-color: $color-primario;
@@ -2286,7 +2314,11 @@ footer {
     p {
       width: 100%;
     } 
-  }  
+  } 
+  .encabezado-seccion h3,
+  .encabezado-seccion h3 span {
+    font-size:30px; 
+  }
   .lista-colores {
     top:50px;
     margin-bottom: 40px;
